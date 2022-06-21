@@ -8,6 +8,6 @@ app.use(cors())
 app.use(morgan('dev'))
 app.use(express.json())
 
-app.get('/', (req, res) => res.send('Hola a todos desde Heroku'))
+app.get('/', (_req, res) => res.send('Hola a todos desde Heroku'))
 
 export default app
